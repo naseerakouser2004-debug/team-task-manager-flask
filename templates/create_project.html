@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Create Project</h2>
+<form method="POST">
+    <input type="text" name="title" class="form-control mb-3" placeholder="Project Title">
+    <textarea name="description" class="form-control mb-3" placeholder="Description"></textarea>
+    <button class="btn btn-primary">Create</button>
+</form>
+{% endblock %}

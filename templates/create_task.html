@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Create Task</h2>
+<form method="POST">
+    <input type="text" name="title" class="form-control mb-3" placeholder="Task Title">
+    <input type="text" name="assigned_to" class="form-control mb-3" placeholder="Assigned To">
+    <input type="text" name="project" class="form-control mb-3" placeholder="Project">
+    <input type="date" name="deadline" class="form-control mb-3">
+    <select name="status" class="form-control mb-3">
+        <option>Pending</option>
+        <option>Completed</option>
+    </select>
+    <button class="btn btn-success">Create Task</button>
+</form>
+{% endblock %}

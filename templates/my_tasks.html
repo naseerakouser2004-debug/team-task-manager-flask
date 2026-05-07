@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>My Tasks</h2>
+<table class="table table-bordered">
+<tr>
+    <th>Task</th>
+    <th>Status</th>
+    <th>Deadline</th>
+</tr>
+{% for task in tasks %}
+<tr>
+    <td>{{ task.title }}</td>
+    <td>{{ task.status }}</td>
+    <td>{{ task.deadline }}</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}
